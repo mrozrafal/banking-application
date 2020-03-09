@@ -80,7 +80,7 @@ function App() {
 
 
         <section className="presentation__app">
-          <div className="presentation__app--picture" alt="woman holding smartphone in a hand"></div>
+          <img className="presentation__app--picture" alt="woman holding smartphone in a hand"></img>
 
           <h3>Aplikacja mobilna</h3>
           <p>
