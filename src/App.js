@@ -23,40 +23,64 @@ function App() {
           </ul>
           
         </nav>
+        <br/>
       </header>
+
+
+
       <section className="presentaion">
         <section className="presentation__account">
-          <img src="" alt="people holding hands"></img>
+          <div className="presentation__account--picture" alt="people holding hands"></div>
 
           <h3>Konto osobiste</h3>
           <p>
             Otwórz przez internet konto osobiste i otrzymuj na nie wynagrodzenie z tytułu umowy o pracę.
             Otrzymaj bonus 200zł za założenie, oraz dodatkowe 50zł za każdą poleconą osobę.
         </p>
-
+       <span className="presentation__button--container">
+        <button className="presentation__button presentation__button--more">Więcej</button>
+        <button className="presentation__button presentation__button--open-account">Otwórz konto</button>
+        </span>
         </section>
+
+
+
         <section className="presentation__app">
-          <img src="" alt="woman holding smartphone in hand"></img>
+          <div className="presentation__app--picture" alt="woman holding smartphone in hand"></div>
 
           <h3>Aplikacja mobilna</h3>
           <p>
             Pobierz aplikację i wykonuj przelewy. Wypłacaj gotówkę nawet bez portfela!
         </p>
+        <span className="presentation__button--container">
+        <button className="presentation__button presentation__button--more">Więcej</button>
+         </span>
         </section>
+
+
+
         <section className="presentation__mortgage">
-          <img src="" alt="nice looking apparment"></img>
+          <div className="presentation__mortgage--picture" alt="nice looking apparment"></div>
 
           <h3>Kredyt hipoteczny</h3>
           <p>
             Złóż wniosek przez internet. Sprawdź swoją zdolność kredytową. Oblicz ratę. Kup wymarzone mieszkanie, dom lub działkę!
         </p>
+        <span className="presentation__button--container">
+        <button className="presentation__button presentation__button--more">Więcej</button>
+         </span>
         </section>
       </section>
+
+
 
       <section className="know-how">
         <h3>Jak sobie radzić z finansami? Poznaj nasze sposoby.</h3>
         <button className="button-knowledge">Wiedza o finansach</button>
       </section>
+
+
+
 
       <section className="news">
         <p>
