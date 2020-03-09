@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 
 
 
@@ -8,15 +8,20 @@ function App() {
   return (
     <div className="App">
       <header className="header">
+        <div className="header__bar">
+        <div className="menu menu--js">=</div>
+        <h1 className="bank-name">Neverland Bank</h1>
+        <button className="button-login">Zaloguj</button>
+        </div>
+        
         <nav className="navigation">
-          <h1 className="bank-name">Neverland Bank</h1>
           <ul className="navigation__list">
             <li className="navigation__list navigation__list--element">Konta osobiste</li>
             <li className="navigation__list navigation__list--element">Kredyt hipoteczny</li>
             <li className="navigation__list navigation__list--element">Pożyczki</li>
             <li className="navigation__list navigation__list--element">Wiedza o finansach</li>
           </ul>
-          <button className="button-login">Zaloguj</button>
+          
         </nav>
       </header>
       <section className="presentaion">
@@ -71,10 +76,10 @@ function App() {
             <li className="footer__list footer__list--element">Kredyt hipoteczny</li>
             <li className="footer__list footer__list--element">Pożyczki</li>
             <li className="footer__list footer__list--element">Wiedza o finansach</li>
-          </ul>          
+          </ul>
         </section>
         <section className="footer__social">
-        <ul className="social__list">
+          <ul className="social__list">
             <li className="social__list social__list--link">fb</li>
             <li className="social__list social__list--link">email</li>
             <li className="social__list social__list--link">kontakt</li>
