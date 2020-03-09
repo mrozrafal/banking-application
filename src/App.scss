@@ -3,6 +3,10 @@ h3,
 p {
   margin: 8px;
 }
+button {
+  background: #6320ee;
+}
+
 .header {
   &__bar {
     position: absolute;
@@ -17,7 +21,7 @@ p {
   }
 }
 .bank-name {
-  margin: 8px 32px 8px 0;
+  margin: 8px 24px 8px 0;
   width: 127px;
   height: 21px;
   font-family: "Roboto", sans-serif;
@@ -43,56 +47,130 @@ p {
   line-height: 14px;
   color: #e7f0ff;
 }
-.menu {
-  display: block;
-  width: 23px;
-  height: 23px;
-  background: #e3ebff;
-  border: 0.25px solid rgba(50, 41, 47, 0.2);
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
-  margin: 8px 12px;
+
+
+
+
+
+.hamburger, .navigation {
+  transition: transform .3s .1s ease-in-out;
 }
+
+.hamburger--active {
+  transform: translatex(248px);
+  z-index:300;
+  
+}
+
+.hamburger__box {
+  width: 35px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+
+}
+
+@mixin hamburger-line {
+  width: 100%;
+  height: 3px;
+  background-color: #fefefe;
+  position: absolute;
+}
+
+.hamburger__inner {
+  @include hamburger-line;
+
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color .1s .2s ease-in-out;
+}
+
+.hamburger__inner::before,
+.hamburger__inner::after {
+  @include hamburger-line;
+  
+  content: '';
+  left: 0;
+  transition: transform .2s .2s ease-in-out;
+} 
+
+.hamburger__inner::before {
+  top: -10px;
+}
+
+.hamburger__inner::after {
+  top: 10px;
+}
+
+.hamburger--active .hamburger__inner {
+  background-color: transparent;
+ 
+}
+
+.hamburger--active .hamburger__inner:before {
+  transform: translateY(10px) rotate(45deg);
+ 
+  
+}
+
+.hamburger--active .hamburger__inner:after {
+  transform: translateY(-10px) rotate(-45deg);
+  
+}
+.hamburger {
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #6320ee;;
+  border: 0;
+  margin: 0;
+  
+}
+
 
 .navigation {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0;
-  margin:40px 0 0 0;
-  position: relative;
-  &__invisiblea {
-    display:none;
-  }
-
-  &__list{
-    padding:2px 0 2px 0;
-    margin:0;
-    border: 2px solid #E5E5E5;
-    background: #4392F1;
-    border-radius:4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    &--element {
-      padding:8px 12px;
-      margin: 1px 2px;
-      color:#6320EE;
-      font-weight: 500;
-      &::after {
-        display:block;
-        content:"";
-        border-bottom: 1px solid #6320EE;
-       padding-top: 4px;
-        width:100%;
-      }
-   
-    }
-  }
-
+  height: calc(100vh + 30px) ;
+  width: 300px;
+  background-color: #6320ee;
+  position: absolute;
+  top: -30px;
+  left: -300px;
+ // transform: translateX(-300px);
+  margin-top: 0;
 }
+
+.navigation--active {
+  transform:  translateX(300px) ;
+  
+
+  z-index: 200;
+  display:inline-block;
+  background: #fefefe;
+}
+
+.navigation__list {
+  margin-top: 50px;
+  list-style: none;
+}
+
+.navigation__item {
+  margin-bottom: 20px;
+  
+}
+
+
+
 .header{
   margin-bottom: 32px;
 }
+
+
+
+
+
+
+
 .presentation {
   margin-top: 32px;
  
@@ -160,6 +238,11 @@ p {
   }
 }
 
+
+
+
+
+
 .button-knowledge {
   width: fit-content;
   background: #e7f0ff;
@@ -190,7 +273,16 @@ p {
     align-items: center;
   }
 }
+
+
+
+
+
+
+
+
 .footer {
+  margin-top: 40px;
   background: #e0e0e0;
   display:flex;
  justify-content: space-between;
@@ -203,6 +295,15 @@ p {
   margin-bottom:0;
   padding-right: 40px
 }
+
+
+
+
+a {
+   color: #E7F0FF;
+}
+
+
 ul {
   list-style: none;
 }
