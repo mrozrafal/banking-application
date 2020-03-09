@@ -20,7 +20,7 @@ p {
   margin: 8px 32px 8px 0;
   width: 127px;
   height: 21px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -36,7 +36,7 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -56,8 +56,39 @@ p {
 }
 
 .navigation {
-  display: none;
-  ////////////////////////////!!!!!!!!!!!/////////@extend
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  margin:40px 0 0 0;
+  position: relative;
+  &__invisiblea {
+    display:none;
+  }
+
+  &__list{
+    padding:2px 0 2px 0;
+    margin:0;
+    border: 2px solid #E5E5E5;
+    background: #4392F1;
+    border-radius:4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    &--element {
+      padding:8px 12px;
+      margin: 1px 2px;
+      color:#6320EE;
+      font-weight: 500;
+      &::after {
+        display:block;
+        content:"";
+        border-bottom: 1px solid #6320EE;
+       padding-top: 4px;
+        width:100%;
+      }
+   
+    }
+  }
+
 }
 .header{
   margin-bottom: 32px;
@@ -116,11 +147,11 @@ p {
   &__account,
   &__app,
   &__mortgage {
+    
     &--picture {
       display: block;
       min-width: fit-content;
       min-height: 170px;
-
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 50% 50%;
@@ -148,10 +179,38 @@ p {
   margin: 40px 8px;
   align-items: center;
 }
-
+.news {
+  &__container {
+    margin: 8px;
+    background: #e7f0ff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer {
+  background: #e0e0e0;
+  display:flex;
+ justify-content: space-between;
+ border-top:1px solid #BFBFBF;
+ color: #4392f1;
+  text-shadow: 2px 2px 2px rgba(49, 49, 49, 0.3);
+ 
+}
+.social__list{
+  margin-bottom:0;
+  padding-right: 40px
+}
+ul {
+  list-style: none;
+}
+button {
+  font-weight: 700;
+}
 html {
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
   color: #253c78;
   background: #f9f7f9;
 }

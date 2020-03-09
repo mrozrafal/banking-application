@@ -9,21 +9,21 @@ function App() {
     <div className="App">
       <header className="header">
         <div className="header__bar">
-        <div className="menu menu--js">=</div>
-        <h1 className="bank-name">Neverland Bank</h1>
-        <button className="button-login">Zaloguj</button>
+          <div className="menu menu--js">=</div>
+          <h1 className="bank-name">Neverland Bank</h1>
+          <button className="button-login">Zaloguj</button>
         </div>
-        
-        <nav className="navigation">
+
+        <nav className="navigation navigation__invisible">
           <ul className="navigation__list">
-            <li className="navigation__list navigation__list--element">Konta osobiste</li>
-            <li className="navigation__list navigation__list--element">Kredyt hipoteczny</li>
-            <li className="navigation__list navigation__list--element">Pożyczki</li>
-            <li className="navigation__list navigation__list--element">Wiedza o finansach</li>
+            <li className="navigation__list--element">Konta osobiste</li>
+            <li className="navigation__list--element">Kredyt hipoteczny</li>
+            <li className="navigation__list--element">Pożyczki</li>
+            <li className="navigation__list--element">Wiedza o finansach</li>
           </ul>
-          
+
         </nav>
-        <br/>
+        <br />
       </header>
 
 
@@ -37,10 +37,10 @@ function App() {
             Otwórz przez internet konto osobiste i otrzymuj na nie wynagrodzenie z tytułu umowy o pracę.
             Otrzymaj bonus 200zł za założenie, oraz dodatkowe 50zł za każdą poleconą osobę.
         </p>
-       <span className="presentation__button--container">
-        <button className="presentation__button presentation__button--more">Więcej</button>
-        <button className="presentation__button presentation__button--open-account">Otwórz konto</button>
-        </span>
+          <span className="presentation__button--container">
+            <button className="presentation__button presentation__button--more">Więcej</button>
+            <button className="presentation__button presentation__button--open-account">Otwórz konto</button>
+          </span>
         </section>
 
 
@@ -52,9 +52,9 @@ function App() {
           <p>
             Pobierz aplikację i wykonuj przelewy. Wypłacaj gotówkę nawet bez portfela!
         </p>
-        <span className="presentation__button--container">
-        <button className="presentation__button presentation__button--more">Więcej</button>
-         </span>
+          <span className="presentation__button--container">
+            <button className="presentation__button presentation__button--more">Więcej</button>
+          </span>
         </section>
 
 
@@ -66,9 +66,9 @@ function App() {
           <p>
             Złóż wniosek przez internet. Sprawdź swoją zdolność kredytową. Oblicz ratę. Kup wymarzone mieszkanie, dom lub działkę!
         </p>
-        <span className="presentation__button--container">
-        <button className="presentation__button presentation__button--more">Więcej</button>
-         </span>
+          <span className="presentation__button--container">
+            <button className="presentation__button presentation__button--more">Więcej</button>
+          </span>
         </section>
       </section>
 
@@ -83,15 +83,41 @@ function App() {
 
 
       <section className="news">
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-        </p>
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-        </p>
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-        </p>
+        <article className="news__container">
+          <h3 className="news__header">Zawirowania na giełdzie z powodu koronawirusa</h3>
+          <p className="news__item">
+            Ogólnoświatowa panika spowodowana epidemią wirusa COVID-19 odbija się echem
+             na rynkach kapitałowych. Inwestorzy wycofują swoje środki z wielu inwestycji.
+             Produkcja w wielu fabrykach została wstrzymana, aż do zakończenia kwarantanny
+             w zagrożonych obszarach Chin. Powoduje to opóźnienia w dostępności wielu towarów,
+            szczególenie podzespołów elektronicznych. Nie dziwi wzrost ich cen. Zauważamy niespotykaną
+            dotąd zmienność na giełdzie. Ceny akcji dużych spółek spadają w zawrotnym tempie, aby potem znów
+            skokowo wzrosnąć do wartości przewyższających te sprzed kryzysu wywołanego wirusem.
+            </p>
+          <button className="button-knowledge">Więcej</button>
+        </article>
+
+        <article className="news__container">
+          <h3 className="news__header">Życie po brexicie. Start negocjacji, Johnson już straszy UE</h3>
+          <p className="news__item">
+            Unia i Wielka Brytania zaczęły negocjacje w sprawie stosunków gospodarczo-politycznych po
+            brexicie. Cele obu stron na razie się wykluczają, a Londyn już używa straszaka „no deal”.
+            Choć więcej straciliby na tym Brytyjczycy.
+           </p>
+          <button className="button-knowledge">Więcej</button>
+        </article>
+
+        <article className="news__container">
+          <h3 className="news__header">Życie po brexicie. Start negocjacji, Johnson już straszy UE</h3>
+          <p className="news__item">
+            Unia i Wielka Brytania zaczęły negocjacje w sprawie stosunków gospodarczo-politycznych po
+            brexicie. Cele obu stron na razie się wykluczają, a Londyn już używa straszaka „no deal”.
+            Choć więcej straciliby na tym Brytyjczycy.
+           </p>
+          <button className="button-knowledge">Więcej</button>
+        </article>
+
+
       </section>
       <nav className="footer">
         <section className="footer__navigation">
