@@ -5,15 +5,9 @@ import Header from './components/Header'
 
 function App() {
   
-
-
-
-
   return (
     <div className="App">
       <Header />
-
-
 
       <section className="presentaion">
         <section className="presentation__account">
@@ -33,7 +27,7 @@ function App() {
 
 
         <section className="presentation__app">
-          <div className="presentation__app--picture" alt="woman holding smartphone in hand"></div>
+          <div className="presentation__app--picture" alt="woman holding smartphone in a hand"></div>
 
           <h3>Aplikacja mobilna</h3>
           <p>
