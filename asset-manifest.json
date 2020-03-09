@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/banking-application/static/css/main.adabfdf6.chunk.css",
+    "main.js": "/banking-application/static/js/main.2aa3eadc.chunk.js",
+    "main.js.map": "/banking-application/static/js/main.2aa3eadc.chunk.js.map",
+    "runtime-main.js": "/banking-application/static/js/runtime-main.9908a2e8.js",
+    "runtime-main.js.map": "/banking-application/static/js/runtime-main.9908a2e8.js.map",
+    "static/js/2.14c869f6.chunk.js": "/banking-application/static/js/2.14c869f6.chunk.js",
+    "static/js/2.14c869f6.chunk.js.map": "/banking-application/static/js/2.14c869f6.chunk.js.map",
+    "index.html": "/banking-application/index.html",
+    "precache-manifest.2571888911655b2cf55d944b8e0c8bd9.js": "/banking-application/precache-manifest.2571888911655b2cf55d944b8e0c8bd9.js",
+    "service-worker.js": "/banking-application/service-worker.js",
+    "static/css/main.adabfdf6.chunk.css.map": "/banking-application/static/css/main.adabfdf6.chunk.css.map",
+    "static/js/2.14c869f6.chunk.js.LICENSE.txt": "/banking-application/static/js/2.14c869f6.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/banking-application/static/media/woman-holding-smartphone.2b86b0a8.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9908a2e8.js",
+    "static/js/2.14c869f6.chunk.js",
+    "static/css/main.adabfdf6.chunk.css",
+    "static/js/main.2aa3eadc.chunk.js"
+  ]
+}
