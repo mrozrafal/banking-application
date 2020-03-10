@@ -41,10 +41,10 @@ class Header extends React.Component {
           >
             <div className="navigation">
               <ul className="navigation__list">
-                <li className="navigation__item"><a href="">Konto osobiste</a></li>
-                <li className="navigation__item"><a href="">Kredyt hipoteczny</a></li>
-                <li className="navigation__item"><a href="">Wiedza o finansach</a></li>
-                <li className="navigation__item"><a href="">Aktualności</a></li>
+                <li onClick={this.handleClick} className="navigation__item"><a href="#account">Konto osobiste</a></li>
+                <li onClick={this.handleClick} className="navigation__item"><a href="#loan">Kredyt hipoteczny</a></li>
+                <li onClick={this.handleClick} className="navigation__item"><a href="#know-how">Wiedza o finansach</a></li>
+                <li onClick={this.handleClick} className="navigation__item"><a href="#news">Aktualności</a></li>
               </ul>
             </div>
   

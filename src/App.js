@@ -10,7 +10,7 @@ function App() {
       <Header />
 
       <section className="presentation">
-        <section className="presentation__account">
+        <section className="presentation__account" id="account"> 
           <div className="presentation__account--picture" alt="people holding hands"></div>
           <article className="presentation__account--text-container">
             <h3>Konto osobiste</h3>
@@ -43,7 +43,7 @@ function App() {
 
 
 
-        <section className="presentation__mortgage">
+        <section className="presentation__mortgage" id="loan">
           <div className="presentation__mortgage--picture" alt="nice looking apparment"></div>
 
           <h3>Kredyt hipoteczny</h3>
@@ -58,15 +58,15 @@ function App() {
 
 
 
-      <section className="know-how">
+      <section className="know-how" id="know-how">
         <h3>Jak sobie radzić z finansami? Poznaj nasze sposoby.</h3>
-        <button className="button-knowledge">Wiedza o finansach</button>
+        <button className="button-knowledge" >Wiedza o finansach</button>
       </section>
 
 
 
 
-      <section className="news">
+      <section className="news" id="news">
         <h2 className="news__big-header">Aktualności</h2>
         <article className="news__container">
           <h3 className="news__header">Zawirowania na giełdzie z powodu koronawirusa</h3>
