@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.scss';
+import './style/App.scss';
 
 class Header extends React.Component {
 
@@ -80,7 +80,7 @@ function App() {
 
 
         <section className="presentation__app">
-          <img className="presentation__app--picture" alt="woman holding smartphone in a hand"></img>
+          <div className="presentation__app--picture" alt="woman holding smartphone in a hand"></div>
 
           <h3>Aplikacja mobilna</h3>
           <p>

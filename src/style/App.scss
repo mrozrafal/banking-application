@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,700i,900&display=swap&subset=latin-ext");
+@import './header.scss';
+@import './hamburger.scss';
+@import './presentation.scss';
+@import './footer.scss';
+h3,
+p {
+  margin: 8px;
+}
+button {
+  background: #6320ee;
+}
+
+.button-knowledge {
+  width: fit-content;
+  background: #e7f0ff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  color: #4392f1;
+  padding: 4px 10px;
+  margin: 16px;
+}
+.know-how {
+  display: flex;
+  flex-direction: column;
+  background: #e5e5e5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  margin: 40px 8px;
+  align-items: center;
+}
+.news {
+  &__container {
+    margin: 8px;
+    background: #e7f0ff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+a {
+   color: #E7F0FF;
+}
+
+
+ul {
+  list-style: none;
+}
+button {
+  font-weight: 700;
+}
+html {
+  font-size: 16px;
+  color: #253c78;
+  background: #f9f7f9;
+}
