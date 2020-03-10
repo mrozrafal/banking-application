@@ -13,13 +13,19 @@
     }
     &__header {
         margin: 68px 0 30px 0;
+        text-align: center;
     }
   }
 
   @media (min-width: $wide-mobile) {
 .news {
-    h2, h3, p {
+    
         max-width: 536px;
-    }
+        margin: 0 auto;
+       &__container {
+           padding: 8px 16px;
+           margin: 16px;
+       }
+    
 }
   }
