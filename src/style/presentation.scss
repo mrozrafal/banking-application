@@ -1,6 +1,6 @@
 .presentation {
   margin-top: 32px;
-  
+
   &__button {
     width: fit-content;
     background: #e7f0ff;
@@ -18,11 +18,10 @@
     }
 
     &--container {
-      margin-top:auto;
+      margin-top: auto;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-     
     }
   }
 
@@ -67,53 +66,50 @@
   }
 }
 
-@media (min-width: 481px) {
-
+@media (min-width: $wide-mobile) {
   .presentation {
-    margin:32px auto;
+    margin: 32px auto;
     max-width: 550px;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-areas:"account account"
-                        "app mortgage";
-  &__button {
- 
- padding: 4px 20px;
-  }
-  &__account,
-  &__app,
-  &__mortgage {
-    max-width:360px;
-  }
-  &__app{
-    grid-area: app;
-  }
-  &__mortgage {
-    grid-area: mortgage;
-  }
-  &__account{
-    grid-template-columns: 1fr 1fr;
-    grid-area: account;
-    max-width: 100%;
     display: grid;
-    grid-template-areas: "img txt"
-                          "img txt"
-                          "img buttons";
-                          &--picture {
-                            grid-area: img;
-                            width: 260px;
-                            height:300px;
-                            
-                          }
-                          &--text-container{
-                            grid-area: txt;
-                            max-width: 75%;
-                          }
-                          &----button-container{
-                            grid-area: buttons;
-                           
-                          }
-  }
-  
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "account account"
+      "app mortgage";
+    &__button {
+      padding: 4px 20px;
+    }
+    &__account,
+    &__app,
+    &__mortgage {
+      max-width: 360px;
+    }
+    &__app {
+      grid-area: app;
+    }
+    &__mortgage {
+      grid-area: mortgage;
+    }
+    &__account {
+      grid-template-columns: 1fr 1fr;
+      grid-area: account;
+      max-width: 100%;
+      display: grid;
+      grid-template-areas:
+        "img txt"
+        "img txt"
+        "img buttons";
+      &--picture {
+        grid-area: img;
+        width: 260px;
+        height: 300px;
+      }
+      &--text-container {
+        grid-area: txt;
+        max-width: 75%;
+      }
+      &----button-container {
+        grid-area: buttons;
+      }
+    }
   }
 }

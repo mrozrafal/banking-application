@@ -67,6 +67,7 @@ function App() {
 
 
       <section className="news">
+        <h2 className="news__big-header">Aktualności</h2>
         <article className="news__container">
           <h3 className="news__header">Zawirowania na giełdzie z powodu koronawirusa</h3>
           <p className="news__item">
