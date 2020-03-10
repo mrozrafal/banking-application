@@ -1,67 +1,119 @@
-
 .presentation {
-    margin-top: 32px;
-   
-    &__button {
-      width: fit-content;
-      background: #e7f0ff;
-      border: 1px solid rgba(0, 0, 0, 0.2);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 4px;
-      color: #4392f1;
-      padding: 4px 10px;
-      margin: 16px;
+  margin-top: 32px;
   
-      &--open-account {
-        color: #e7f0ff;
-        background: #4392f1;
-      }
-  
-      &--container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 0 55px;
-      }
+  &__button {
+    width: fit-content;
+    background: #e7f0ff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    color: #4392f1;
+    padding: 4px 10px;
+    margin: 16px;
+    font-size: 15px;
+
+    &--open-account {
+      color: #e7f0ff;
+      background: #4392f1;
     }
-  
-    &__account,
-    &__app,
-    &__mortgage {
-      margin: 8px;
-      background: #e7f0ff;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 4px;
+
+    &--container {
+      margin-top:auto;
       display: flex;
-      flex-direction: column;
-    }
-    &__account {
-      &--picture {
-        background-image: url("../assets/img/happy-people-holdings-hands.jpg");
-      }
-    }
-    &__app {
-      &--picture {
-        background-image: url("../assets/img/woman-holding-smartphone.jpg");
-      }
-    }
-    &__mortgage {
-      &--picture {
-        background-image: url("../assets/img/nice-looking-apartment.jpg");
-      }
-    }
-    &__account,
-    &__app,
-    &__mortgage {
-      
-      &--picture {
-        display: block;
-        min-width: fit-content;
-        min-height: 170px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        border-radius: 4px;
-      }
+      flex-direction: row;
+      justify-content: space-around;
+     
     }
   }
+
+  &__account,
+  &__app,
+  &__mortgage {
+    margin: 8px;
+    background: #e7f0ff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  &__account {
+    &--picture {
+      background-image: url("../assets/img/happy-people-holdings-hands.jpg");
+    }
+  }
+  &__app {
+    &--picture {
+      background-image: url("../assets/img/woman-holding-smartphone.jpg");
+    }
+  }
+  &__mortgage {
+    &--picture {
+      background-image: url("../assets/img/nice-looking-apartment.jpg");
+    }
+  }
+  &__account,
+  &__app,
+  &__mortgage {
+    &--picture {
+      display: block;
+      min-width: fit-content;
+      min-height: 170px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      border-radius: 4px;
+    }
+  }
+}
+
+@media (min-width: 481px) {
+
+  .presentation {
+    margin:32px auto;
+    max-width: 550px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas:"account account"
+                        "app mortgage";
+  &__button {
+ 
+ padding: 4px 20px;
+  }
+  &__account,
+  &__app,
+  &__mortgage {
+    max-width:360px;
+  }
+  &__app{
+    grid-area: app;
+  }
+  &__mortgage {
+    grid-area: mortgage;
+  }
+  &__account{
+    grid-template-columns: 1fr 1fr;
+    grid-area: account;
+    max-width: 100%;
+    display: grid;
+    grid-template-areas: "img txt"
+                          "img txt"
+                          "img buttons";
+                          &--picture {
+                            grid-area: img;
+                            width: 260px;
+                            height:300px;
+                            
+                          }
+                          &--text-container{
+                            grid-area: txt;
+                            max-width: 75%;
+                          }
+                          &----button-container{
+                            grid-area: buttons;
+                           
+                          }
+  }
+  
+  }
+}

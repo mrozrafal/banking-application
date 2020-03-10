@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .header {
     &__bar {
       position: absolute;
@@ -16,7 +18,7 @@
   }
   
   .bank-name {
-    margin: 8px 24px 8px 0;
+    margin: 8px 0 8px 0;
     width: 127px;
     height: 21px;
     font-family: "Roboto", sans-serif;
@@ -43,5 +45,3 @@
     line-height: 14px;
     color: #e7f0ff;
   }
-  
-  

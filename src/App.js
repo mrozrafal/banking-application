@@ -3,29 +3,29 @@ import './style/App.scss';
 
 class Header extends React.Component {
 
-state = {
-  active: false
-}  
-  
-toggleClass() {
-  const currentState= this.state.active;
-  this.setState({ active: !currentState});
-}
+  state = {
+    active: false
+  }
 
-handleClick = () => {
-  this.toggleClass();
-}
+  toggleClass() {
+    const currentState = this.state.active;
+    this.setState({ active: !currentState });
+  }
+
+  handleClick = () => {
+    this.toggleClass();
+  }
 
 
-  render (onClick) {
+  render(onClick) {
     return <>
-    <header className="header">
+      <header className="header">
         <div className="header__bar">
 
-          <button 
-          onClick={this.handleClick} 
-          className={this.state.active ? 'hamburger--active': "hamburger"} 
->
+          <button
+            onClick={this.handleClick}
+            className={this.state.active ? 'hamburger--active' : "hamburger"}
+          >
             <span className="hamburger__box">
               <span className="hamburger__inner"></span>
             </span>
@@ -35,19 +35,19 @@ handleClick = () => {
           <button className="button-login">Zaloguj</button>
         </div>
 
-        <nav 
-        className={this.state.active ?  'navigation--active' :  'navigation' } 
-       
-        
+        <nav
+          className={this.state.active ? 'navigation--active' : 'navigation'}
+
+
         >
-          <div class="navigation">
-  <ul class="navigation__list">
-    <li class="navigation__item"><a href="">Konto osobiste</a></li>
-    <li class="navigation__item"><a href="">Kredyt hipoteczny</a></li>
-    <li class="navigation__item"><a href="">Wiedza o finansach</a></li>
-    <li class="navigation__item"><a href="">Aktualności</a></li>
-  </ul>
-</div>
+          <div className="navigation">
+            <ul className="navigation__list">
+              <li className="navigation__item"><a href="">Konto osobiste</a></li>
+              <li className="navigation__item"><a href="">Kredyt hipoteczny</a></li>
+              <li className="navigation__item"><a href="">Wiedza o finansach</a></li>
+              <li className="navigation__item"><a href="">Aktualności</a></li>
+            </ul>
+          </div>
 
         </nav>
         <br />
@@ -57,21 +57,24 @@ handleClick = () => {
 }
 
 function App() {
-  
+
   return (
     <div className="App">
       <Header />
 
-      <section className="presentaion">
+      <section className="presentation">
         <section className="presentation__account">
           <div className="presentation__account--picture" alt="people holding hands"></div>
-
-          <h3>Konto osobiste</h3>
-          <p>
-            Otwórz przez internet konto osobiste i otrzymuj na nie wynagrodzenie z tytułu umowy o pracę.
-            Otrzymaj bonus 200zł za założenie, oraz dodatkowe 50zł za każdą poleconą osobę.
+          <article className="presentation__account--text-container">
+            <h3>Konto osobiste</h3>
+            <p>
+              Otwórz przez internet konto osobiste i otrzymuj na nie wynagrodzenie z tytułu umowy o pracę.
+              Otrzymaj bonus 200zł za założenie, oraz dodatkowe 50zł za każdą poleconą osobę.
         </p>
-          <span className="presentation__button--container">
+
+          </article>
+
+          <span className="presentation__button--container presentation__account--button-container">
             <button className="presentation__button presentation__button--more">Więcej</button>
             <button className="presentation__button presentation__button--open-account">Otwórz konto</button>
           </span>
@@ -121,9 +124,9 @@ function App() {
           <h3 className="news__header">Zawirowania na giełdzie z powodu koronawirusa</h3>
           <p className="news__item">
             Ogólnoświatowa panika spowodowana epidemią wirusa COVID-19 odbija się echem
-             na rynkach kapitałowych. Inwestorzy wycofują swoje środki z wielu inwestycji.
-             Produkcja w wielu fabrykach została wstrzymana, aż do zakończenia kwarantanny
-             w zagrożonych obszarach Chin. Powoduje to opóźnienia w dostępności wielu towarów,
+            na rynkach kapitałowych. Inwestorzy wycofują swoje środki z wielu inwestycji.
+            Produkcja w wielu fabrykach została wstrzymana, aż do zakończenia kwarantanny
+            w zagrożonych obszarach Chin. Powoduje to opóźnienia w dostępności wielu towarów,
             szczególenie podzespołów elektronicznych. Nie dziwi wzrost ich cen. Zauważamy niespotykaną
             dotąd zmienność na giełdzie. Ceny akcji dużych spółek spadają w zawrotnym tempie, aby potem znów
             skokowo wzrosnąć do wartości przewyższających te sprzed kryzysu wywołanego wirusem.
