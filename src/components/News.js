@@ -23,7 +23,7 @@ class News extends React.Component {
     }
 
     handleLoadArticle() {
-        var url = 'http://newsapi.org/v2/top-headlines?' +
+        var url = 'https://newsapi.org/v2/top-headlines?' +
             'country=pl&' +
             'category=business&' +
             'sortBy=popularity&' +
