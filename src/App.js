@@ -1,6 +1,7 @@
 import React from 'react';
 import './style/App.scss';
 import Header from './components/Header';
+import News from './components/News';
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       <Header />
 
       <section className="presentation">
-        <section className="presentation__account" id="account"> 
+        <section className="presentation__account" id="account">
           <div className="presentation__account--picture" alt="people holding hands"></div>
           <article className="presentation__account--text-container">
             <h3>Konto osobiste</h3>
@@ -64,46 +65,12 @@ function App() {
       </section>
 
 
+      <h2 className="news__big-header">Aktualności</h2>
+      <News id={0}/>
+      <News id={1}/>
+      <News id={2}/>
+      <h6 className="news-api-info"><em>Artykuły pobrano z newsapi.org</em></h6>
 
-
-      <section className="news" id="news">
-        <h2 className="news__big-header">Aktualności</h2>
-        <article className="news__container">
-          <h3 className="news__header">Zawirowania na giełdzie z powodu koronawirusa</h3>
-          <p className="news__item">
-            Ogólnoświatowa panika spowodowana epidemią wirusa COVID-19 odbija się echem
-            na rynkach kapitałowych. Inwestorzy wycofują swoje środki z wielu inwestycji.
-            Produkcja w wielu fabrykach została wstrzymana, aż do zakończenia kwarantanny
-            w zagrożonych obszarach Chin. Powoduje to opóźnienia w dostępności wielu towarów,
-            szczególenie podzespołów elektronicznych. Nie dziwi wzrost ich cen. Zauważamy niespotykaną
-            dotąd zmienność na giełdzie. Ceny akcji dużych spółek spadają w zawrotnym tempie, aby potem znów
-            skokowo wzrosnąć do wartości przewyższających te sprzed kryzysu wywołanego wirusem.
-            </p>
-          <button className="button-knowledge">Więcej</button>
-        </article>
-
-        <article className="news__container">
-          <h3 className="news__header">Życie po brexicie. Start negocjacji, Johnson już straszy UE</h3>
-          <p className="news__item">
-            Unia i Wielka Brytania zaczęły negocjacje w sprawie stosunków gospodarczo-politycznych po
-            brexicie. Cele obu stron na razie się wykluczają, a Londyn już używa straszaka „no deal”.
-            Choć więcej straciliby na tym Brytyjczycy.
-           </p>
-          <button className="button-knowledge">Więcej</button>
-        </article>
-
-        <article className="news__container">
-          <h3 className="news__header">Życie po brexicie. Start negocjacji, Johnson już straszy UE</h3>
-          <p className="news__item">
-            Unia i Wielka Brytania zaczęły negocjacje w sprawie stosunków gospodarczo-politycznych po
-            brexicie. Cele obu stron na razie się wykluczają, a Londyn już używa straszaka „no deal”.
-            Choć więcej straciliby na tym Brytyjczycy.
-           </p>
-          <button className="button-knowledge">Więcej</button>
-        </article>
-
-
-      </section>
       <nav className="footer">
         <section className="footer__navigation">
           <ul className="footer__list">
