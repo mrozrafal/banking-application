@@ -11,7 +11,7 @@ function App() {
       <Header />
 
       <section className="presentation">
-        <section className="presentation__account" id="account">
+        <section className="presentation__account" id="myAccount">
           <div className="presentation__account--picture" alt="people holding hands"></div>
           <article className="presentation__account--text-container">
             <h3>Konto osobiste</h3>
@@ -44,7 +44,7 @@ function App() {
 
 
 
-        <section className="presentation__mortgage" id="loan">
+        <section className="presentation__mortgage" id="myLoan">
           <div className="presentation__mortgage--picture" alt="nice looking apparment"></div>
 
           <h3>Kredyt hipoteczny</h3>
@@ -59,7 +59,7 @@ function App() {
 
 
 
-      <section className="know-how" id="know-how">
+      <section className="know-how" id="myKnow-how">
         <h3>Jak sobie radzić z finansami? Poznaj nasze sposoby.</h3>
         <button className="button-knowledge" >Wiedza o finansach</button>
       </section>

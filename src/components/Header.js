@@ -26,6 +26,7 @@ class Header extends React.Component {
             <button
               onClick={this.handleClick}
               className={this.state.active ? 'hamburger--active' : "hamburger"}
+              
             >
               <span className="hamburger__box">
                 <span className="hamburger__inner"></span>
@@ -43,10 +44,10 @@ class Header extends React.Component {
           >
             <div className="navigation">
               <ul className="navigation__list">
-                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#account">Konto osobiste</a></li>
-                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#loan">Kredyt hipoteczny</a></li>
-                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#know-how">Wiedza o finansach</a></li>
-                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#news">Aktualności</a></li>
+                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#myAccount">Konto osobiste</a></li>
+                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#myLoan">Kredyt hipoteczny</a></li>
+                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#myKnow-how">Wiedza o finansach</a></li>
+                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#myNews">Aktualności</a></li>
               </ul>
             </div>
   
