@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/banking-application/static/css/main.c6677787.chunk.css",
-    "main.js": "/banking-application/static/js/main.bf9bf7ee.chunk.js",
-    "main.js.map": "/banking-application/static/js/main.bf9bf7ee.chunk.js.map",
+    "main.js": "/banking-application/static/js/main.0812efba.chunk.js",
+    "main.js.map": "/banking-application/static/js/main.0812efba.chunk.js.map",
     "runtime-main.js": "/banking-application/static/js/runtime-main.9908a2e8.js",
     "runtime-main.js.map": "/banking-application/static/js/runtime-main.9908a2e8.js.map",
     "static/js/2.909907ef.chunk.js": "/banking-application/static/js/2.909907ef.chunk.js",
     "static/js/2.909907ef.chunk.js.map": "/banking-application/static/js/2.909907ef.chunk.js.map",
     "index.html": "/banking-application/index.html",
-    "precache-manifest.ff1c95f08856a3ae0db8c7e7b87b10ad.js": "/banking-application/precache-manifest.ff1c95f08856a3ae0db8c7e7b87b10ad.js",
+    "precache-manifest.778bbf07e307c63a1ee921cd15888243.js": "/banking-application/precache-manifest.778bbf07e307c63a1ee921cd15888243.js",
     "service-worker.js": "/banking-application/service-worker.js",
     "static/css/main.c6677787.chunk.css.map": "/banking-application/static/css/main.c6677787.chunk.css.map",
     "static/js/2.909907ef.chunk.js.LICENSE.txt": "/banking-application/static/js/2.909907ef.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.9908a2e8.js",
     "static/js/2.909907ef.chunk.js",
     "static/css/main.c6677787.chunk.css",
-    "static/js/main.bf9bf7ee.chunk.js"
+    "static/js/main.0812efba.chunk.js"
   ]
 }
