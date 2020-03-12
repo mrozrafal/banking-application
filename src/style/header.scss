@@ -45,3 +45,16 @@
     line-height: 14px;
     color: #e7f0ff;
   }
+ a {
+   color: #e7f0ff;
+   
+  
+ }
+
+ @media (min-width: $wide-tablet) {
+   .button-login {
+     height: 34px;
+     width: 120px;
+     margin: 12px 16px 0 8px;
+   }
+ }

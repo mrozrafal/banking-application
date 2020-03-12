@@ -14,7 +14,9 @@ class Header extends React.Component {
     handleClick = () => {
       this.toggleClass();
     }
-  
+  handleRemoveClass = () => {
+    this.setState({ active: false})
+  }
   
     render(onClick) {
       return <>
@@ -41,10 +43,10 @@ class Header extends React.Component {
           >
             <div className="navigation">
               <ul className="navigation__list">
-                <li onClick={this.handleClick} className="navigation__item"><a href="#account">Konto osobiste</a></li>
-                <li onClick={this.handleClick} className="navigation__item"><a href="#loan">Kredyt hipoteczny</a></li>
-                <li onClick={this.handleClick} className="navigation__item"><a href="#know-how">Wiedza o finansach</a></li>
-                <li onClick={this.handleClick} className="navigation__item"><a href="#news">Aktualności</a></li>
+                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#account">Konto osobiste</a></li>
+                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#loan">Kredyt hipoteczny</a></li>
+                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#know-how">Wiedza o finansach</a></li>
+                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#news">Aktualności</a></li>
               </ul>
             </div>
   

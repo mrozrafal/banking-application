@@ -5,6 +5,8 @@
 @import './footer.scss';
 @import './variables.scss';
 @import './news.scss';
+@import './navigation.scss';
+
 h3,
 p {
   margin: 8px;
@@ -36,10 +38,6 @@ button {
 
 
 
-
-a {
-   color: #E7F0FF;
-}
 
 
 ul {
