@@ -1,14 +1,18 @@
 import React from 'react';
 import './style/App.scss';
-import Header from './components/Header';
+import Navbar from './components/Navbar';
 import News from './components/News';
+
 
 
 function App() {
 
   return (
     <div className="App">
-      <Header />
+      <header className="header">
+          <Navbar />
+          <br />
+        </header>
 
       <section className="presentation">
         <section className="presentation__account" id="myAccount">
