@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/banking-application/static/css/main.3e7c10b0.chunk.css",
-    "main.js": "/banking-application/static/js/main.48dbc1cb.chunk.js",
-    "main.js.map": "/banking-application/static/js/main.48dbc1cb.chunk.js.map",
+    "main.css": "/banking-application/static/css/main.5341a1fe.chunk.css",
+    "main.js": "/banking-application/static/js/main.241148e5.chunk.js",
+    "main.js.map": "/banking-application/static/js/main.241148e5.chunk.js.map",
     "runtime-main.js": "/banking-application/static/js/runtime-main.9908a2e8.js",
     "runtime-main.js.map": "/banking-application/static/js/runtime-main.9908a2e8.js.map",
     "static/js/2.909907ef.chunk.js": "/banking-application/static/js/2.909907ef.chunk.js",
     "static/js/2.909907ef.chunk.js.map": "/banking-application/static/js/2.909907ef.chunk.js.map",
     "index.html": "/banking-application/index.html",
-    "precache-manifest.670082fe1176bb0293c7ddb604bf2551.js": "/banking-application/precache-manifest.670082fe1176bb0293c7ddb604bf2551.js",
+    "precache-manifest.185c7bc873bc9d1b0ae654143baa12be.js": "/banking-application/precache-manifest.185c7bc873bc9d1b0ae654143baa12be.js",
     "service-worker.js": "/banking-application/service-worker.js",
-    "static/css/main.3e7c10b0.chunk.css.map": "/banking-application/static/css/main.3e7c10b0.chunk.css.map",
+    "static/css/main.5341a1fe.chunk.css.map": "/banking-application/static/css/main.5341a1fe.chunk.css.map",
     "static/js/2.909907ef.chunk.js.LICENSE.txt": "/banking-application/static/js/2.909907ef.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/banking-application/static/media/woman-holding-smartphone.2b86b0a8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9908a2e8.js",
     "static/js/2.909907ef.chunk.js",
-    "static/css/main.3e7c10b0.chunk.css",
-    "static/js/main.48dbc1cb.chunk.js"
+    "static/css/main.5341a1fe.chunk.css",
+    "static/js/main.241148e5.chunk.js"
   ]
 }
