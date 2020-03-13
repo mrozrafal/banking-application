@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Navbar from './Navbar';
 
 class Header extends React.Component {
 
@@ -21,25 +22,11 @@ class Header extends React.Component {
     render(onClick) {
       return <>
         <header className="header">
-          <div className="header__bar">
-  
-            <button
-              onClick={this.handleClick}
-              className={this.state.active ? 'hamburger--active' : "hamburger"}
-              
-            >
-              <span className="hamburger__box">
-                <span className="hamburger__inner"></span>
-              </span>
-            </button>
-  
-            <h1 className="bank-name">Neverland Bank</h1>
-            <button className="button-login">Zaloguj</button>
-          </div>
+          <Navbar />
+          
   
           <nav
             className={this.state.active ? 'navigation--active' : 'navigation'}
-  
   
           >
             <div className="navigation">
