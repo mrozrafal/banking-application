@@ -6,5 +6,9 @@ body {
 }
 html {
   font-family: roboto;
+  font-size: 16px;
+  color: #253c78;
+  background: #f9f7f9;
+  scroll-behavior: smooth;
 }
 

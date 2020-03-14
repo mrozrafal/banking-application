@@ -9,7 +9,7 @@ class Navbar extends React.Component {
         hamburgerActive : false
     };
 
-    componentWillMount() {
+    componentDidMount() {
         // When this component mounts, begin listening for scroll changes
         window.addEventListener('scroll', this.handleScroll);
     }
@@ -73,7 +73,7 @@ class Navbar extends React.Component {
                 <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#myAccount">Konto osobiste</a></li>
                 <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#myLoan">Kredyt hipoteczny</a></li>
                 <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#myKnow-how">Wiedza o finansach</a></li>
-                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#myNews">Aktualności</a></li>
+                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#fetched-news-from-newsapi">Aktualności</a></li>
               </ul>
            
   

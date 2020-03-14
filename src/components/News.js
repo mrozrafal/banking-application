@@ -71,7 +71,7 @@ componentWillUnmount() {
 
         return (
 
-            <section className="news" id="myNews">
+            <section className="news" >
                
 
 

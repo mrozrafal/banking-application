@@ -1,59 +1,107 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 .header {
+  &__bar {
+    position: absolute;
+    width: 100%;
+    height: 44px;
+    left: 0px;
+    top: 0px;
+    background: #6320ee;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+}
+
+.bank-name {
+  margin: 10px 0 8px 0;
+  width: 127px;
+  height: 21px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #e7f0ff;
+  text-shadow: 0px 4px 4px rgba(4, 0, 0, 0.7);
+}
+
+.button-login {
+  margin: 6px 10px 0 8px;
+  background: #4392f1;
+  color: #e7f0ff;
+  margin: 4px 16px;
+}
+a {
+  color: #e7f0ff;
+}
+
+@media (min-width: $wide-tablet) {
+  .button-login {
+    height: 34px;
+    width: 120px;
+    grid-area: login;
+  }
+  .bank-name {
+    font-size: 24px;
+    grid-area: bn;
+  }
+  .hamburger{
+    display:none;
+  }
+  
+  .header {
+
+    margin-bottom: 120px;
+
     &__bar {
-      position: absolute;
-      width: 100%;
-      height: 44px;
-      left: 0px;
-      top: 0px;
       background: #6320ee;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-bottom: 32px;
+      height: 60px;
+      display: grid;
+grid-template-columns: 4fr 4fr 1fr;
+grid-template-areas: ". bn login"
+                      "nav nav nav";
     
-      
+    
     }
   }
-  
-  .bank-name {
-    margin: 10px 0 8px 0;
-    width: 127px;
-    height: 21px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    color: #e7f0ff;
-    text-shadow: 0px 4px 4px rgba(4, 0, 0, 0.7);
-  
-  }
-
-  .button-login {
-    margin: 6px 10px 0 8px;
-    background: #4392f1;
-    color: #e7f0ff;
-    margin: 4px 16px;
-  }
- a {
-   color: #e7f0ff;
+  .navigation {
+    display: block;
+   grid-area: nav;
    
-  
- }
-
- @media (min-width: $wide-tablet) {
-   .button-login {
-     height: 34px;
-     width: 120px;
+    height: 44px;
+    &__list{
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      background: #fefefe;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
      
-   }
- }
- @media (max-width: $wide-tablet)  {
+    }
+    &__item{
+      padding: 16px;
+     
+     
+    }
+  }
+  a {
+    color: #6320ee;
+  }
+}
+
+
+
+
+@media (max-width: $wide-tablet) {
   .header {
     &__bar {
       position: fixed;
     }
- }
+  }
 }
+
+
+
+

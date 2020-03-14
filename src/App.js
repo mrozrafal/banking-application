@@ -69,7 +69,7 @@ function App() {
       </section>
 
 
-      <h2 className="news__big-header">Aktualności</h2>
+      <h2 id="fetched-news-from-newsapi" className="news__big-header">Aktualności</h2>
       <News id={0}/>
       <News id={1}/>
       <News id={2}/>
