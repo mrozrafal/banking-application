@@ -39,7 +39,7 @@ class News extends React.Component {
             }).then(response => response.json())
             .then(content => {
                 const art = content.articles[this.state.id];
-                console.log(art.title);
+                
 
                 this.setState(prevState =>({
                     error: false,
