@@ -46,6 +46,7 @@ class Navbar extends React.Component {
         }
 
     };
+ 
 
     render() {
         return (
@@ -81,7 +82,9 @@ class Navbar extends React.Component {
                 </nav>
 
                 <h1 className="bank-name">Neverland Bank</h1>
-                <button className="button-login">Zaloguj</button>
+                <button 
+               
+                className="button-login">Zaloguj</button>
             </div>
 
 
