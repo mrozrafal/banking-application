@@ -3,17 +3,17 @@
   "name": "Neverland Bank",
   "icons": [
     {
-      "src": "./assets/img/icons/favicon.ico",
+      "src": "./src/assets/img/icons/favicon",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "./assets/img/icons/favicon192.png",
+      "src": "./src/assets/img/icons/android-icon-192x192",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "./assets/img/icons/favicon512.png",
+      "src": "./src/assets/img/icons/favicon512",
       "type": "image/png",
       "sizes": "512x512"
     }
