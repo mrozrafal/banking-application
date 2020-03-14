@@ -34,15 +34,16 @@
   color: #e7f0ff;
   margin: 4px 16px;
 }
-a {
-  color: #e7f0ff;
-}
+
 
 @media (min-width: $wide-tablet) {
   .button-login {
+   margin: 10px 4px;
     height: 34px;
     width: 120px;
     grid-area: login;
+    justify-self: right;
+
   }
   .bank-name {
     font-size: 24px;
@@ -68,10 +69,9 @@ grid-template-areas: ". bn login"
     }
   }
   .navigation {
-    display: block;
    grid-area: nav;
-   
-    height: 44px;
+   width:100vw;   
+    height: 32px;
     &__list{
       position: relative;
       display: flex;

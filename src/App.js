@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-          <Navbar />
-          <br />
-        </header>
+        <Navbar />
+        <br />
+      </header>
 
       <section className="presentation">
         <section className="presentation__account" id="myAccount">
@@ -68,13 +68,13 @@ function App() {
         <button className="button-knowledge" >Wiedza o finansach</button>
       </section>
 
-
-      <h2 id="fetched-news-from-newsapi" className="news__big-header">Aktualności</h2>
-      <News id={0}/>
-      <News id={1}/>
-      <News id={2}/>
-      <h6 className="news-api-info"><em>Artykuły pobrano z newsapi.org</em></h6>
-
+      <section className="news__box">
+        <h2 id="fetched-news-from-newsapi" className="news__big-header">Aktualności</h2>
+        <News id={0} />
+        <News id={1} />
+        <News id={2} />
+        <h6 className="source-info"> Artykuły pobrano z newsapi.org</h6>
+      </section>
       <nav className="footer">
         <section className="footer__navigation">
           <ul className="footer__list">

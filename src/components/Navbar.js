@@ -5,8 +5,8 @@ class Navbar extends React.Component {
     state = {
         auth: false,
         slide: 0,  // How much should the Navbar slide up or down
-        lastScrollY: 0,  
-        hamburgerActive : false
+        lastScrollY: 0,
+        hamburgerActive: false
     };
 
     componentDidMount() {
@@ -21,22 +21,22 @@ class Navbar extends React.Component {
     toggleClass() {
         const currentState = this.state.hamburgerActive;
         this.setState({ hamburgerActive: !currentState });
-      }
-    
-      handleClick = () => {
+    }
+
+    handleClick = () => {
         this.toggleClass();
-      }
+    }
     handleRemoveClass = () => {
-      this.setState({ hamburgerActive: false})
-      
+        this.setState({ hamburgerActive: false })
+
     }
 
     handleScroll = () => {
-        if(!this.state.hamburgerActive) {
+        if (!this.state.hamburgerActive) {
             const { lastScrollY } = this.state;
             const currentScrollY = window.scrollY;
-    
-    
+
+
             if (currentScrollY > lastScrollY) {
                 this.setState({ slide: '-48px' });
             } else {
@@ -44,7 +44,7 @@ class Navbar extends React.Component {
             }
             this.setState({ lastScrollY: currentScrollY });
         }
-        
+
     };
 
     render() {
@@ -55,29 +55,29 @@ class Navbar extends React.Component {
                 transition: 'transform 90ms ease-in-out',
             }}>
 
-<button
-        onClick={this.handleClick}
-        className={this.state.hamburgerActive ? 'hamburger hamburger--active' : "hamburger"}
+                <button
+                    onClick={this.handleClick}
+                    className={this.state.hamburgerActive ? 'hamburger hamburger--active' : "hamburger"}
 
-    >
-        <span className="hamburger__box">
-            <span className="hamburger__inner"></span>
-        </span>
-    </button>
-    <nav
-            className={this.state.hamburgerActive ? 'navigation navigation--active' : 'navigation'}
-  
-          >
-            
-              <ul className="navigation__list">
-                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#myAccount">Konto osobiste</a></li>
-                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#myLoan">Kredyt hipoteczny</a></li>
-                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#myKnow-how">Wiedza o finansach</a></li>
-                <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#fetched-news-from-newsapi">Aktualności</a></li>
-              </ul>
-           
-  
-          </nav>
+                >
+                    <span className="hamburger__box">
+                        <span className="hamburger__inner"></span>
+                    </span>
+                </button>
+                <nav
+                    className={this.state.hamburgerActive ? 'navigation navigation--active' : 'navigation'}
+
+                >
+
+                    <ul className="navigation__list">
+                        <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#myAccount">Konto osobiste</a></li>
+                        <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#myLoan">Kredyt hipoteczny</a></li>
+                        <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#myKnow-how">Wiedza o finansach</a></li>
+                        <li onClick={this.handleRemoveClass} className="navigation__item"><a href="#fetched-news-from-newsapi">Aktualności</a></li>
+                    </ul>
+
+
+                </nav>
 
                 <h1 className="bank-name">Neverland Bank</h1>
                 <button className="button-login">Zaloguj</button>
