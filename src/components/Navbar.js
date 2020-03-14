@@ -58,6 +58,7 @@ class Navbar extends React.Component {
                 <button
                     onClick={this.handleClick}
                     className={this.state.hamburgerActive ? 'hamburger hamburger--active' : "hamburger"}
+                    aria-label="hamburger menu"
 
                 >
                     <span className="hamburger__box">
