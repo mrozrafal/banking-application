@@ -33,6 +33,12 @@
   background: #4392f1;
   color: #e7f0ff;
   margin: 4px 16px;
+  transition: background 1s 0.1s ease;
+  &:hover {
+    
+    background: #0072FF;
+  }
+  
 }
 
 
@@ -104,6 +110,19 @@ grid-template-areas: ". bn login"
   .header {
     &__bar {
       position: fixed;
+    }
+  }
+  .navigation {
+    
+
+     &__item{
+      
+       transition: font-weight .2s ease;
+      &:hover{
+       
+        font-weight: bold;
+       
+      }
     }
   }
 }

@@ -16,7 +16,7 @@ const Presentation = () => {
 
           <span className="presentation__button--container presentation__account--button-container">
             <button className="presentation__button presentation__button--more">Więcej</button>
-            <button className="presentation__button presentation__button--open-account">Otwórz konto</button>
+            <button className="button-login presentation__button presentation__button--open-account">Otwórz konto</button>
           </span>
         </section>
 
