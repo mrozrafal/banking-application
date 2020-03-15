@@ -1,12 +1,15 @@
-import React from 'react'
+import React from 'react';
+import LoginForm from './LoginForm';
 
 
-class Navbar extends React.Component {
+
+class Header extends React.Component {
     state = {
         auth: false,
         slide: 0,  // How much should the Navbar slide up or down
         lastScrollY: 0,
-        hamburgerActive: false
+        hamburgerActive: false,
+        wannaLogin: false
     };
 
     componentDidMount() {
@@ -32,7 +35,7 @@ class Navbar extends React.Component {
     }
 
     handleScroll = () => {
-        if (!this.state.hamburgerActive) {
+        if (!this.state.hamburgerActive & !this.state.wannaLogin) {
             const { lastScrollY } = this.state;
             const currentScrollY = window.scrollY;
 
@@ -46,9 +49,16 @@ class Navbar extends React.Component {
         }
 
     };
- 
 
+handleLoginClick = (event) => {
+       
+    this.setState({ wannaLogin: true })
+  }
+handleCloseForm = (event) => {
+    this.setState({ wannaLogin: false })
+}
     render() {
+        const { wannaLogin } = this.state;
         return (
 
             <div className="header__bar" style={{
@@ -82,9 +92,13 @@ class Navbar extends React.Component {
                 </nav>
 
                 <h1 className="bank-name">Neverland Bank</h1>
-                <button 
-               
-                className="button-login">Zaloguj</button>
+                <button onClick={this.handleLoginClick}
+                    className="button-login">Zaloguj</button>
+                {wannaLogin && <LoginForm onClose={this.handleCloseForm}/>
+                   
+                    
+                   
+               }
             </div>
 
 
@@ -92,5 +106,10 @@ class Navbar extends React.Component {
         );
     }
 }
+// function LoginForm(onClose) {
+//     return (
+        
+//     )
+// }
 
-export default Navbar;
+export default Header;
