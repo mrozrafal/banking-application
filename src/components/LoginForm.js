@@ -1,9 +1,10 @@
 import React from 'react';
-
+import ReactDOM from 'react-dom';
+const modalsRoot = document.getElementById("modalsRoot")
 function LoginForm (props) {
 
     
-    return (
+    return ReactDOM.createPortal (
         <div className={props.wannaLogin ? "darken-box" : "darken-box slide-down"}>
             <div style={{
                 backround: "#6320ee",
@@ -42,7 +43,7 @@ function LoginForm (props) {
             </div>
  </div>
        
-    );
+    , modalsRoot);
 
 }
 export default LoginForm;
