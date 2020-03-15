@@ -9,12 +9,14 @@ class Header extends React.Component {
         slide: 0,  // How much should the Navbar slide up or down
         lastScrollY: 0,
         hamburgerActive: false,
-        wannaLogin: false
+        wannaLogin: false,
+        loginSlide: false
     };
 
     componentDidMount() {
         // When this component mounts, begin listening for scroll changes
         window.addEventListener('scroll', this.handleScroll);
+       
     }
 
     componentWillUnmount() {
@@ -51,9 +53,9 @@ class Header extends React.Component {
     };
 
 handleLoginClick = (event) => {
-       
-    this.setState({ wannaLogin: true })
-  }
+            this.setState({ wannaLogin: true })
+        
+}
 handleCloseForm = (event) => {
     this.setState({ wannaLogin: false })
 }
@@ -94,22 +96,19 @@ handleCloseForm = (event) => {
                 <h1 className="bank-name">Neverland Bank</h1>
                 <button onClick={this.handleLoginClick}
                     className="button-login">Zaloguj</button>
-                {wannaLogin && <LoginForm onClose={this.handleCloseForm}/>
-                   
-                    
-                   
+                { wannaLogin && <LoginForm onClose={this.handleCloseForm}>
+               
+        
+                </LoginForm>
+                
                }
             </div>
-
-
 
         );
     }
 }
-// function LoginForm(onClose) {
-//     return (
-        
-//     )
-// }
+
+
+
 
 export default Header;

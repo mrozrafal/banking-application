@@ -5,19 +5,24 @@ import Presentation from './components/Presentation';
 import KnowHow from './components/Know-how';
 import NewsBox from './components/NewsBox';
 import Footer from './components/Footer';
-import LoginForm from './components/LoginForm';
+import { unstable_batchedUpdates } from 'react-dom';
 
 
 
-function App() {
+
+class App extends React.Component {
+
+    
+
+render() {
+
 
   return (
     <div className="App">
       <header className="header">
         <Header />
         <br />
-      </header>
-      
+      </header>      
       <Presentation />
       <KnowHow />
       <NewsBox />
@@ -26,6 +31,7 @@ function App() {
 
     </div>
   );
+}
 }
 
 export default App;
