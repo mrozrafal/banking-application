@@ -80,7 +80,7 @@ componentWillUnmount() {
                     <p className="news__item">
                         {this.state.article}
                     </p>
-                    <em>{this.state.author}</em>
+                    
                     <a className="button-news" href={this.state.url}>Więcej</a>
                 </article>
 

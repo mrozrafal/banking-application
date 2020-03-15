@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 const modalsRoot = document.getElementById("modalsRoot")
-function LoginForm (props) {
+
+class LoginForm extends React.Component {
 
     
+render() {
+    
+    
     return ReactDOM.createPortal (
-        <div className={props.wannaLogin ? "darken-box" : "darken-box slide-down"}>
+        <div className={this.props.wannaLogin ? "darken-box" : "darken-box slide-down"}>
             <div style={{
                 backround: "#6320ee",
                 padding: 30
@@ -14,36 +18,34 @@ function LoginForm (props) {
 
                 <span className="form-container">
 
-                    <button className="button-close" onClick={props.onClose}>
+                    <button className="button-close" onClick={this.props.onClose}>
                     ✖️
                    
                     </button>
-
-
-
-
 
                     <form className="login-form">
 
                         <label className="login-form__label">
                             Email:
-<input type="email">
+            <input type="email">
                             </input>
                         </label>
                         <label className="login-form__label" >
                             Hasło:
-<input type="password">
+            <input type="password">
                             </input>
                         </label>
-
-                        <button className="button-submit button-login">Zaloguj</button>
-
+            <div className="button__container">
+                        <button onClick={this.onSubmit} className="button-submit button-login">Zaloguj</button>
+                        <button onClick={this.onOpenAccount} className="button-submit button-login" >Otwórz konto</button>
+            </div >
                     </form>
                 </span>
             </div>
- </div>
+                </div>
        
-    , modalsRoot);
+     , modalsRoot);
 
-}
+            }
+        }
 export default LoginForm;
