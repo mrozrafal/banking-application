@@ -81,8 +81,14 @@ grid-template-areas: ". bn login"
      
     }
     &__item{
-      padding: 16px;
-     
+      margin:16px 8px;
+      font-size: 16px;
+      transition: font-size .2s ease;
+     &:hover{
+      
+       font-size:18px;
+      
+     }
      
     }
   }
